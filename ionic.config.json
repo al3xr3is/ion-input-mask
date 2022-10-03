@@ -1,0 +1,7 @@
+{
+  "name": "poc-input-mask",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
