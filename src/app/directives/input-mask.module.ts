@@ -1,21 +1,18 @@
-import { InputMaskDirectiveModule } from './../directives/input-mask.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
+import { InputMaskDirective } from './input-mask.directive';
 
-import { HomePageRoutingModule } from './home-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    InputMaskDirectiveModule,
     IonicModule,
-    HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  exports: [InputMaskDirective],
+  declarations: [InputMaskDirective]
 })
-export class HomePageModule {}
+export class InputMaskDirectiveModule {}
